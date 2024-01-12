@@ -14,7 +14,7 @@ Updating Python on systems like Raspberry Pi and Ubuntu can often be a complex a
 Run the installer with the command:
 
 ```bash
-wget -qO - https://raw.githubusercontent.com/tvdsluijs/sh-python-installer/main/python.sh | sudo bash -s [python_version]
+wget -qO - https://raw.githubusercontent.com/prostoix/sh-python-installer/main/python.sh | sudo bash -s [python_version]
 ```
 
 Replace `[python_version]` with your desired version, for example (left some code out for readability):
@@ -37,5 +37,4 @@ Replace `[python_version]` with your desired version, for example (left some cod
 ## License
 Licensed under the [MIT License](https://choosealicense.com/licenses/mit/). Copyright (c) 2022 [itheo.tech](https://itheo.tech/).
 
-## Support & Donations
-For support, visit [itheo.tech](https://itheo.tech/). Contributions are welcome at [DonorBox](https://donorbox.org/tvdsluijs-github).
+
