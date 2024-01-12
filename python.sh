@@ -56,11 +56,11 @@ install_python () {
 
     echo "Installing system essentials"
     # sometimes the checkinstall package does not exists and then things break. I guess this is not the best solution, but don't know how to fix this.
-    if [[ $(command -v checkinstall) ]]; then
+    #if [[ $(command -v checkinstall) ]]; then
        # apt-get -qq install -y wget build-essential checkinstall < /dev/null
-    else
+    #else
        # apt-get -qq install -y wget build-essential < /dev/null
-    fi
+    #fi
 
     echo "Installing Python essentials"
     apt-get -qq install -y build-essential zlib1g-dev uuid-dev liblzma-dev lzma-dev libncurses5-dev libgdbm-dev libnss3-dev libssl-dev libreadline-dev libffi-dev libsqlite3-dev libbz2-dev < /dev/null
