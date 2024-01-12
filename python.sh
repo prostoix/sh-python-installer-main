@@ -84,7 +84,7 @@ install_python () {
     rm -r "${file}"
 
     echo "Let's install PIP"
-    apt-get -qq install -y python3-pip < /dev/null
+    #apt-get -qq install -y python3-pip < /dev/null
 
     echo "updating pip..."
     python"${py_main_version}" -m pip install --upgrade pip
