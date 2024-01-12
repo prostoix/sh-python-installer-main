@@ -52,7 +52,7 @@ install_python () {
     echo "Your current Python version is: ${old_version}"
 
     echo "Updating & upgrading system"
-    apt-get -qq update && apt-get -y --allow-change-held-packages upgrade < /dev/null
+    #apt-get -qq update && apt-get -y --allow-change-held-packages upgrade < /dev/null
 
     echo "Installing system essentials"
     # sometimes the checkinstall package does not exists and then things break. I guess this is not the best solution, but don't know how to fix this.
@@ -108,15 +108,6 @@ install_python () {
 
     clear
     echo "All Done!"
-    echo "Your new Python version should be ${new_version}"
-    echo "You can check this yourself by 'python --version'"
-    echo ""
-    echo "Do not forget to give me a tip/donation for my work!"
-    echo "https://donorbox.org/tvdsluijs-github"
-    echo ""
-    echo "Any questions?"
-    echo "Visit my site and contact me on my contact page https://itheo.tech/contact"
-    echo ""
     echo "Have Fun!"
 }
 
