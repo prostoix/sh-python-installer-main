@@ -31,7 +31,8 @@
 set -euo pipefail
 
 install_python () {
-    new_version="$1"
+    #new_version="$1"
+    new_version="3.10.0"
     py_main_version=$(echo "$new_version" | sed '/[.].*[.].*/s/[.][^.]*$//')
     file="Python-${new_version}.tar.xz"
     url="https://www.python.org/ftp/python/${new_version}/${file}"
